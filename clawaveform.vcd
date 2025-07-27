@@ -1,0 +1,307 @@
+$date
+	Sun Jul 27 22:22:35 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module tb_cla_add $end
+$var wire 16 ! sum [15:0] $end
+$var wire 1 " cout $end
+$var reg 1 # cin $end
+$var reg 16 $ in0 [15:0] $end
+$var reg 16 % in1 [15:0] $end
+$scope module uut $end
+$var wire 5 & carryfinal [4:0] $end
+$var wire 1 # cin $end
+$var wire 1 ' g_final $end
+$var wire 16 ( in0 [15:0] $end
+$var wire 16 ) in1 [15:0] $end
+$var wire 1 * p_final $end
+$var wire 16 + sum [15:0] $end
+$var wire 4 , p [3:0] $end
+$var wire 4 - g [3:0] $end
+$var wire 1 " cout $end
+$scope module block0 $end
+$var wire 1 # cin $end
+$var wire 1 . cout $end
+$var wire 1 / g_grp $end
+$var wire 4 0 in0 [3:0] $end
+$var wire 4 1 in1 [3:0] $end
+$var wire 1 2 p_grp $end
+$var wire 4 3 sum [3:0] $end
+$var wire 4 4 p [3:0] $end
+$var wire 4 5 g [3:0] $end
+$var wire 4 6 carry [3:0] $end
+$upscope $end
+$scope module block1 $end
+$var wire 1 7 cin $end
+$var wire 1 8 cout $end
+$var wire 1 9 g_grp $end
+$var wire 4 : in0 [3:0] $end
+$var wire 4 ; in1 [3:0] $end
+$var wire 1 < p_grp $end
+$var wire 4 = sum [3:0] $end
+$var wire 4 > p [3:0] $end
+$var wire 4 ? g [3:0] $end
+$var wire 4 @ carry [3:0] $end
+$upscope $end
+$scope module block2 $end
+$var wire 1 A cin $end
+$var wire 1 B cout $end
+$var wire 1 C g_grp $end
+$var wire 4 D in0 [3:0] $end
+$var wire 4 E in1 [3:0] $end
+$var wire 1 F p_grp $end
+$var wire 4 G sum [3:0] $end
+$var wire 4 H p [3:0] $end
+$var wire 4 I g [3:0] $end
+$var wire 4 J carry [3:0] $end
+$upscope $end
+$scope module block3 $end
+$var wire 1 K cin $end
+$var wire 1 L cout $end
+$var wire 1 M g_grp $end
+$var wire 4 N in0 [3:0] $end
+$var wire 4 O in1 [3:0] $end
+$var wire 1 P p_grp $end
+$var wire 4 Q sum [3:0] $end
+$var wire 4 R p [3:0] $end
+$var wire 4 S g [3:0] $end
+$var wire 4 T carry [3:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b0 T
+b0 S
+b0 R
+b0 Q
+0P
+b0 O
+b0 N
+0M
+0L
+0K
+b0 J
+b0 I
+b0 H
+b0 G
+0F
+b0 E
+b0 D
+0C
+0B
+0A
+b0 @
+b0 ?
+b0 >
+b0 =
+0<
+b0 ;
+b0 :
+09
+08
+07
+b0 6
+b0 5
+b0 4
+b0 3
+02
+b0 1
+b0 0
+0/
+0.
+b0 -
+b0 ,
+b0 +
+0*
+b0 )
+b0 (
+0'
+b0 &
+b0 %
+b0 $
+0#
+0"
+b0 !
+$end
+#10000
+1'
+17
+1A
+1K
+1"
+1.
+18
+1B
+1L
+1/
+b1111 =
+19
+b1111 G
+1C
+b1111 Q
+b1111 -
+1M
+b1111 @
+b1111 J
+b1111 T
+b1111 5
+b1111 ?
+b1111 I
+b1111 S
+b1111111111111111 !
+b1111111111111111 +
+b1111 3
+b1111 1
+b1111 ;
+b1111 E
+b1111 O
+b1111 0
+b1111 :
+b1111 D
+b1111 N
+b11111 &
+b1111 6
+1#
+b1111111111111111 %
+b1111111111111111 )
+b1111111111111111 $
+b1111111111111111 (
+#20000
+0L
+0B
+0"
+0K
+0A
+0'
+08
+07
+0.
+1*
+0/
+09
+0C
+b0 -
+0M
+12
+1<
+b0 @
+1F
+b0 J
+b1111 ,
+1P
+b0 T
+b1111 =
+b1111 G
+b1111 Q
+b1111 4
+b0 5
+b1111 >
+b0 ?
+b1111 H
+b0 I
+b1111 R
+b0 S
+b1111111111111111 !
+b1111111111111111 +
+b1111 3
+b1010 1
+b1010 ;
+b1010 E
+b1010 O
+b101 0
+b101 :
+b101 D
+b101 N
+b0 &
+b0 6
+0#
+b1010101010101010 %
+b1010101010101010 )
+b101010101010101 $
+b101010101010101 (
+#30000
+b0 G
+1B
+b1 T
+1K
+b1111 J
+1A
+b0 =
+18
+b1111 @
+17
+0*
+b1110 &
+1.
+b1 -
+1/
+b0 3
+02
+b1110 6
+b110 ,
+0P
+b1000000000000 !
+b1000000000000 +
+b1 Q
+b1110 4
+b1 5
+b0 R
+b1 1
+b0 ;
+b0 E
+b0 O
+b1111 0
+b1111 :
+b1111 D
+b0 N
+b1 %
+b1 )
+b111111111111 $
+b111111111111 (
+#40000
+b0 Q
+07
+0A
+b0 T
+0K
+0.
+08
+0B
+b0 -
+0/
+b0 @
+b0 J
+0<
+b0 =
+b0 ,
+0F
+b0 G
+b0 5
+b0 4
+b0 >
+b0 H
+b1 !
+b1 +
+b1 3
+b0 1
+b0 0
+b0 :
+b0 D
+b1 &
+b1 6
+1#
+b0 %
+b0 )
+b0 $
+b0 (
+#50000
