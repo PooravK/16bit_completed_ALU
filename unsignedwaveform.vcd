@@ -1,5 +1,5 @@
 $date
-	Mon Jul 28 22:32:24 2025
+	Thu Jul 31 03:30:07 2025
 $end
 $version
 	Icarus Verilog
@@ -7,350 +7,103 @@ $end
 $timescale
 	1ps
 $end
-$scope module tb_unsigned_mult $end
-$var wire 32 ! prod [31:0] $end
-$var reg 16 " in0 [15:0] $end
-$var reg 16 # in1 [15:0] $end
+$scope module tb_unsigned_div $end
+$var wire 16 ! remainder [15:0] $end
+$var wire 16 " quotient [15:0] $end
+$var reg 16 # dividend [15:0] $end
+$var reg 16 $ divisor [15:0] $end
 $scope module uut $end
-$var wire 16 $ in0 [15:0] $end
-$var wire 16 % in1 [15:0] $end
-$var wire 16 & prod4 [15:0] $end
-$var wire 16 ' prod3 [15:0] $end
-$var wire 16 ( prod2 [15:0] $end
-$var wire 16 ) prod1 [15:0] $end
-$var wire 32 * prod [31:0] $end
-$scope module hxh $end
-$var wire 8 + in0 [7:0] $end
-$var wire 8 , in1 [7:0] $end
-$var wire 16 - prod [15:0] $end
-$scope begin genblk1[0] $end
-$var parameter 2 . i $end
-$upscope $end
-$scope begin genblk1[1] $end
-$var parameter 2 / i $end
-$upscope $end
-$scope begin genblk1[2] $end
-$var parameter 3 0 i $end
-$upscope $end
-$scope begin genblk1[3] $end
-$var parameter 3 1 i $end
-$upscope $end
-$scope begin genblk1[4] $end
-$var parameter 4 2 i $end
-$upscope $end
-$scope begin genblk1[5] $end
-$var parameter 4 3 i $end
-$upscope $end
-$scope begin genblk1[6] $end
-$var parameter 4 4 i $end
-$upscope $end
-$scope begin genblk1[7] $end
-$var parameter 4 5 i $end
-$upscope $end
-$upscope $end
-$scope module hxl $end
-$var wire 8 6 in0 [7:0] $end
-$var wire 8 7 in1 [7:0] $end
-$var wire 16 8 prod [15:0] $end
-$scope begin genblk1[0] $end
-$var parameter 2 9 i $end
-$upscope $end
-$scope begin genblk1[1] $end
-$var parameter 2 : i $end
-$upscope $end
-$scope begin genblk1[2] $end
-$var parameter 3 ; i $end
-$upscope $end
-$scope begin genblk1[3] $end
-$var parameter 3 < i $end
-$upscope $end
-$scope begin genblk1[4] $end
-$var parameter 4 = i $end
-$upscope $end
-$scope begin genblk1[5] $end
-$var parameter 4 > i $end
-$upscope $end
-$scope begin genblk1[6] $end
-$var parameter 4 ? i $end
-$upscope $end
-$scope begin genblk1[7] $end
-$var parameter 4 @ i $end
-$upscope $end
-$upscope $end
-$scope module lxh $end
-$var wire 8 A in0 [7:0] $end
-$var wire 8 B in1 [7:0] $end
-$var wire 16 C prod [15:0] $end
-$scope begin genblk1[0] $end
-$var parameter 2 D i $end
-$upscope $end
-$scope begin genblk1[1] $end
-$var parameter 2 E i $end
-$upscope $end
-$scope begin genblk1[2] $end
-$var parameter 3 F i $end
-$upscope $end
-$scope begin genblk1[3] $end
-$var parameter 3 G i $end
-$upscope $end
-$scope begin genblk1[4] $end
-$var parameter 4 H i $end
-$upscope $end
-$scope begin genblk1[5] $end
-$var parameter 4 I i $end
-$upscope $end
-$scope begin genblk1[6] $end
-$var parameter 4 J i $end
-$upscope $end
-$scope begin genblk1[7] $end
-$var parameter 4 K i $end
-$upscope $end
-$upscope $end
-$scope module lxl $end
-$var wire 8 L in0 [7:0] $end
-$var wire 8 M in1 [7:0] $end
-$var wire 16 N prod [15:0] $end
-$scope begin genblk1[0] $end
-$var parameter 2 O i $end
-$upscope $end
-$scope begin genblk1[1] $end
-$var parameter 2 P i $end
-$upscope $end
-$scope begin genblk1[2] $end
-$var parameter 3 Q i $end
-$upscope $end
-$scope begin genblk1[3] $end
-$var parameter 3 R i $end
-$upscope $end
-$scope begin genblk1[4] $end
-$var parameter 4 S i $end
-$upscope $end
-$scope begin genblk1[5] $end
-$var parameter 4 T i $end
-$upscope $end
-$scope begin genblk1[6] $end
-$var parameter 4 U i $end
-$upscope $end
-$scope begin genblk1[7] $end
-$var parameter 4 V i $end
-$upscope $end
-$upscope $end
+$var wire 16 % dividend [15:0] $end
+$var wire 16 & divisor [15:0] $end
+$var reg 16 ' quotient [15:0] $end
+$var reg 16 ( remainder [15:0] $end
+$var integer 32 ) i [31:0] $end
 $upscope $end
 $upscope $end
 $enddefinitions $end
 $comment Show the parameter values. $end
 $dumpall
-b111 V
-b110 U
-b101 T
-b100 S
-b11 R
-b10 Q
-b1 P
-b0 O
-b111 K
-b110 J
-b101 I
-b100 H
-b11 G
-b10 F
-b1 E
-b0 D
-b111 @
-b110 ?
-b101 >
-b100 =
-b11 <
-b10 ;
-b1 :
-b0 9
-b111 5
-b110 4
-b101 3
-b100 2
-b11 1
-b10 0
-b1 /
-b0 .
 $end
 #0
 $dumpvars
-b0 N
-b0 M
-b0 L
-b0 C
-b0 B
-b0 A
-b0 8
-b0 7
-b0 6
-b0 -
-b0 ,
-b0 +
-b0 *
-b0 )
+b10000 )
 b0 (
-b0 '
-b0 &
-b0 %
-b0 $
-b0 #
-b0 "
+b1010 '
+b1010 &
+b1100100 %
+b1010 $
+b1100100 #
+b1010 "
 b0 !
 $end
 #10000
-b11010010 L
-b11010010 A
-b100 6
-b100 +
-b10011010010 "
-b10011010010 $
+b11 !
+b11 (
+b10000 )
+b1100111 #
+b1100111 %
 #20000
-b101110 M
-b10110 B
-b101110 7
-b10110 ,
-b0 L
-b0 A
-b0 6
-b0 +
-b1011000101110 #
-b1011000101110 %
-b0 "
-b0 $
-#30000
-b1111111111111111 !
-b1111111111111111 *
-b11111111 )
-b11111111 N
-b11111111 '
-b11111111 8
-b1 M
-b0 B
-b1 7
-b0 ,
-b11111111 L
-b11111111 A
-b11111111 6
-b11111111 +
-b1 #
-b1 %
+b110010 !
+b110010 (
 b1111111111111111 "
-b1111111111111111 $
+b1111111111111111 '
+b10000 )
+b0 $
+b0 &
+b110010 #
+b110010 %
+#30000
+b0 !
+b0 (
+b11000000111001 "
+b11000000111001 '
+b10000 )
+b1 $
+b1 &
+b11000000111001 #
+b11000000111001 %
 #40000
-b1111111111111111 !
-b1111111111111111 *
-b11111111 )
-b11111111 N
-b11111111 (
-b11111111 C
+b0 "
 b0 '
-b0 8
-b11111111 M
-b11111111 B
-b11111111 7
-b11111111 ,
-b1 L
-b1 A
-b0 6
-b0 +
+b10000 )
+b11000000111001 $
+b11000000111001 &
+b0 #
+b0 %
+#50000
+b110010 !
+b110010 (
+b10000 )
+b1100100 $
+b1100100 &
+b110010 #
+b110010 %
+#60000
+b0 !
+b0 (
+b1 "
+b1 '
+b10000 )
+b1000011100001 $
+b1000011100001 &
+b1000011100001 #
+b1000011100001 %
+#70000
+b1 !
+b1 (
+b111111111111111 "
+b111111111111111 '
+b10000 )
+b10 $
+b10 &
 b1111111111111111 #
 b1111111111111111 %
-b1 "
-b1 $
-#50000
-b1111111000000001 )
-b1111111000000001 N
-b1111111000000001 (
-b1111111000000001 C
-b11111111111111100000000000000001 !
-b11111111111111100000000000000001 *
-b1111111000000001 '
-b1111111000000001 8
-b1111111000000001 &
-b1111111000000001 -
-b11111111 L
-b11111111 A
-b11111111 6
-b11111111 +
-b1111111111111111 "
-b1111111111111111 $
-#60000
-b100 !
-b100 *
-b100 )
-b100 N
-b0 (
-b0 C
-b0 '
-b0 8
-b0 &
-b0 -
-b10 M
-b0 B
-b10 7
-b0 ,
-b10 L
-b10 A
-b0 6
-b0 +
-b10 #
-b10 %
-b10 "
-b10 $
-#70000
-b0 )
-b0 N
-b10000000000000000 !
-b10000000000000000 *
-b1 &
-b1 -
-b0 M
-b1 B
-b0 7
-b1 ,
-b0 L
-b0 A
-b1 6
-b1 +
-b100000000 #
-b100000000 %
-b100000000 "
-b100000000 $
 #80000
-b100000000000000000000 !
-b100000000000000000000 *
-b10000 &
-b10000 -
-b100 B
-b100 ,
-b100 6
-b100 +
-b10000000000 #
-b10000000000 %
-b10000000000 "
-b10000000000 $
+b0 !
+b0 (
+b1 "
+b1 '
+b10000 )
+b1111111111111111 $
+b1111111111111111 &
 #90000
-b111000111000110001110001110010 !
-b111000111000110001110001110010 *
-b11100001110010 )
-b11100001110010 N
-b11100001110010 (
-b11100001110010 C
-b11100001110010 '
-b11100001110010 8
-b11100001110010 &
-b11100001110010 -
-b10101010 M
-b10101010 B
-b10101010 7
-b10101010 ,
-b1010101 L
-b1010101 A
-b1010101 6
-b1010101 +
-b1010101010101010 #
-b1010101010101010 %
-b101010101010101 "
-b101010101010101 $
-#100000
