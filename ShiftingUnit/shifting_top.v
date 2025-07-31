@@ -1,6 +1,6 @@
 module shifting_top(
     input [15:0]in0,
-    input [3:0]in1,
+    input [15:0]in1,
     input [2:0]shift_type,
     output reg [15:0]shift_result
     );
